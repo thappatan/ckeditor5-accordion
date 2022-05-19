@@ -1,11 +1,11 @@
 import { MyPlugin as MyPluginDll, icons } from '../src';
-import MyPlugin from '../src/myplugin';
+import AccordionUI from '../src/accordionui';
 
 import ckeditor from './../theme/icons/ckeditor.svg';
 
 describe( 'CKEditor5 MyPlugin DLL', () => {
 	it( 'exports MyPlugin', () => {
-		expect( MyPluginDll ).to.equal( MyPlugin );
+		expect( MyPluginDll ).to.equal( AccordionUI );
 	} );
 
 	describe( 'icons', () => {

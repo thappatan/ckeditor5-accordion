@@ -1,7 +1,8 @@
-import ckeditor from './../theme/icons/ckeditor.svg';
 
-export { default as MyPlugin } from './myplugin';
+import accordionIcon from '../theme/icons/accordion.svg';
+
+export { default as AccordionUI } from './accordionui';
 
 export const icons = {
-	ckeditor
+	accordionIcon
 };

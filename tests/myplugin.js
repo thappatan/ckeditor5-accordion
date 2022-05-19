@@ -2,13 +2,13 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
-import MyPlugin from '../src/myplugin';
+import AccordionUI from '../src/accordionui';
 
 /* global document */
 
 describe( 'MyPlugin', () => {
 	it( 'should be named', () => {
-		expect( MyPlugin.pluginName ).to.equal( 'MyPlugin' );
+		expect( AccordionUI.pluginName ).to.equal( 'AccordionUI' );
 	} );
 
 	describe( 'init()', () => {
@@ -23,7 +23,7 @@ describe( 'MyPlugin', () => {
 					Paragraph,
 					Heading,
 					Essentials,
-					MyPlugin
+					AccordionUI
 				],
 				toolbar: [
 					'myButton'
@@ -36,10 +36,10 @@ describe( 'MyPlugin', () => {
 			return editor.destroy();
 		} );
 
-		it( 'should load MyPlugin', () => {
-			const myPlugin = editor.plugins.get( 'MyPlugin' );
+		it( 'should load Accordion', () => {
+			const myPlugin = editor.plugins.get( 'Accordion' );
 
-			expect( myPlugin ).to.be.an.instanceof( MyPlugin );
+			expect( myPlugin ).to.be.an.instanceof( AccordionUI );
 		} );
 
 		it( 'should add an icon to the toolbar', () => {
